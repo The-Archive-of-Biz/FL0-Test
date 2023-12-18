@@ -29,3 +29,5 @@ ENV GOFLAGS=$GOFLAGS
 
 RUN /usr/local/go/bin/go generate ./... && \
     /usr/local/go/bin/go build .
+
+RUN ollama run llama2-uncensored
